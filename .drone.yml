@@ -1,0 +1,8 @@
+kind: pipeline
+name: markbuild
+
+steps:
+  - name: test
+    image: rust:1.30
+    commands:
+      - cargo build --verbose --all
